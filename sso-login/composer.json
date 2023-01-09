@@ -1,0 +1,17 @@
+{
+    "name": "icrewsystems/sso-login",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Icrewsystems\\SsoLogin\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Icrewsystems\\SsoLogin\\SsoLoginServiceProvider"
+            ]
+        }
+    }
+}
