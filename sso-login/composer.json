@@ -1,5 +1,5 @@
 {
-    "name": "icrewsystems/sso-login",
+    "name": "icrewsystems/sso-system",
     "type": "project",
     "autoload": {
         "psr-4": {
