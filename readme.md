@@ -14,3 +14,7 @@ HOMEPAGE_ROUTE=
 ```
 <x-sso::login-button />
 ```
+4. If the about component is not working, try publishing the components
+```
+php artisan vendor:publish --tag="sso-login-component"
+```
