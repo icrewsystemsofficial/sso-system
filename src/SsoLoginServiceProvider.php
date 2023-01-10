@@ -13,6 +13,13 @@ class SsoLoginServiceProvider extends ServiceProvider
         $this->registerRoutes();
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sso');
+        if ($this->app->runningInConsole()) {
+            // Publish view components
+            $this->publishes([
+                __DIR__.'/../src/View/Components/' => app_path('View/Components'),
+                __DIR__.'/../resources/views/components/' => resource_path('views/components'),
+            ], 'sso-login-compoenent');
+          }
     }
     protected function registerRoutes()
     {
