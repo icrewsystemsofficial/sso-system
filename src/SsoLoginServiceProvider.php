@@ -11,7 +11,6 @@ class SsoLoginServiceProvider extends ServiceProvider
     {
         // dd('it works');
         $this->registerRoutes();
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sso');
         if ($this->app->runningInConsole()) {
             // Publish view components
