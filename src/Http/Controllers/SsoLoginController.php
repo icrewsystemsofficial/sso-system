@@ -40,9 +40,9 @@ class SsoLoginController extends Controller
         $sso_url = config('sso.sso_url');
         $homepage_route_name = config('sso.homepage_route_name');
 
-        for ($i = 0; $i < 12; $i++) {
+        /* for ($i = 0; $i < 12; $i++) {
             $encoded_url = base64_encode($encoded_url);
-        }
+        } */
 
         $sso_verify_url = $sso_url . '/api/v1/sso/verify-token/' . $sso_key;
         $response = Http::get($sso_verify_url);
